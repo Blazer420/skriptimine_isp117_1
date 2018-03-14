@@ -1,0 +1,8 @@
+#! /bin/bash
+#Kuup2ev ja ajaga seotud ylesanne
+#
+#skripti algus
+echo "Today is $(date)"
+echo "$(cal)"
+#
+#skripti lõpp
