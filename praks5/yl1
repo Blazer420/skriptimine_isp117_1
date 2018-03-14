@@ -1,0 +1,22 @@
+#! /bin/bash
+#
+#
+#Skripti algus
+
+echo "sisestage esimene kylg"
+read ekylg
+echo "sisestage teine kylg"
+read tkylg
+echo "esimene kylg on $ekylg ja teine kylg on $tkylg" #näitab mis kylg on mis 
+
+etehe=`echo "scale=2;($ekylg^2)" |bc` #esimese  külje ruut
+
+ttehe=`echo "scale=2;($tkylg^2)" |bc` #teise külje ruut
+
+ktehe=`echo "scale=2;($etehe+$ttehe)" |bc` #arvutab summa 
+
+ntehe=`echo "scale=2;sqrt($ktehe)" |bc` #arvutab vastuse
+
+echo "tehted tehtud"
+echo "loppvastus, $ntehe"
+#Skripti lopp
