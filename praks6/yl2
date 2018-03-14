@@ -1,0 +1,16 @@
+#! /bin/bash
+#
+#
+#Skripti algus
+read -p "sisestage reisijate arv: " reisijad
+read -p "sisestage kohtade arv bussis: " bussis
+xb=`expr $reisijad \/ $bussis `
+xp=`expr $xb \+ 1`
+if (($reisijad % $bussis == 0))
+then
+	echo "vaja on tellida $xb bussi"
+else
+	echo "vaja on tellida $xp bussi"
+
+fi
+#skripti lõpp
