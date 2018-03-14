@@ -1,0 +1,9 @@
+#! /bin/bash
+#
+#skript mis näitab mitu päeva masin tööl on olnud
+#
+#
+#skripti algus
+echo -n "$(hostname) at "
+echo -e `uptime | cut -f1 -d","`
+
