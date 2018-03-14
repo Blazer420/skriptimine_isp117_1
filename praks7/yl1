@@ -1,0 +1,27 @@
+#! /bin/bash
+#
+#skripti algus 									yes
+
+read -p "Sisestage enda vanus:" vanus
+
+if test $vanus -gt 0 -a $vanus -lt -11
+then
+	echo "oled laps"
+elif test $vanus -ge 11 -a $vanus -lt 18
+then
+	echo "oled teismeline"
+elif test $vanus -ge 18 -a $vanus -lt 63
+then
+	echo "oled t2iskasvanud"
+elif test $vanus -ge 63 -a $vanus -lt 665
+then
+	echo "oled seenjor"
+elif test $vanus -ge 666
+then
+	echo "oled saatan"
+else
+	echo "vigane sisend"
+fi
+
+#skripti lõpp
+
