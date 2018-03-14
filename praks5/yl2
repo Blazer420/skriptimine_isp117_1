@@ -1,0 +1,17 @@
+#! /bin/bash
+
+echo "sisestage a kylje vaartus"
+
+read a
+
+echo "sisestage b kylje vaartus"
+
+read b
+
+echo "sisestage c kylje vaartus"
+
+read c
+
+echo "kyled a $a, b $b, c $c"
+
+
