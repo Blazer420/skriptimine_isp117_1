@@ -1,0 +1,23 @@
+#! /bin/bash
+#
+#skripti algus
+#
+echo "sisestage aluskandiku pikkus cm"
+read k_pikkus #laseb sisestada numbreid või sõnu
+echo "sisestage aluskandiku laius cm"
+read k_laius
+echo "sisestage kypsise pikkus cm"
+read ky_pikkus
+echo "sisestage kypsise laius cm"
+read ky_laius
+echo "sisestage kypsiste arv pakendis"
+read ky_arv
+echo "sisestage mitu kihti on tort"
+read ki_arv
+kandik=`expr $k_pikkus \* $k_laius`
+kypsis=`expr $ky_pikkus \* $ky_laius`
+yhes_kihis=`expr $kandik\/ $kypsis`
+pakke=`expr $ki_arv \* $yhes_kihis`
+pakk3=`expr $pakke \/ $ky_arv`
+echo "pakis on $pakk3 pakki kypsist"
+#skripti lõpp
