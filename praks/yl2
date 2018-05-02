@@ -1,0 +1,16 @@
+#!/bin/bash
+echo -n "sisestage kuu number:"
+read number
+if test $number -gt 0 -a $number -lt 3 -o $number -eq 12
+then
+echo "on talv"
+elif test $number -ge 3 -a $number -lt 6
+then
+echo "on kevad"
+elif test $number -ge 6 -a $number -lt 9
+then
+echo "on suvi"
+elif test $number -ge 9 -a $number -lt 12
+then 
+echo "on sügis"
+fi
