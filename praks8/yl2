@@ -1,0 +1,12 @@
+#!/bin/bash
+#skript algab                                                                     dab
+echo -n "sisestage täisarv"
+read arv
+summa=0
+while [ $arv -ne 0 ]
+do
+number-$(($arv % 10))
+summa-$(($summa + $number))
+arv-$(($arv / 10))
+done
+echo "täisarvu summa on: $summa"
