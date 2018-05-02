@@ -1,0 +1,12 @@
+#!/bin/bash
+#skripti algus
+
+echo "sisestage reisjate arv:" #küsisin arvu
+read reisijad
+echo "sisestage kohtade arv bussis:" #küsisin kohti
+read kohad
+bussis=`expr $reisijad / $kohad` #mitu bussi on vaja
+karv=`expr $bussis \* $kohad` #kohad saadaval
+mj=`expr $reisijad -  $karv` #lahutan reisijate arvust kohtade arvu
+echo "täidetud busside arv: $bussis bussi; Maha jääb $mj inimest" 
+#skripti lõpp
