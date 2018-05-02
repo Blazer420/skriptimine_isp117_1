@@ -1,0 +1,11 @@
+#!/bin/bash
+#
+#Skripti algus
+#
+
+for a in 1 2 3 4 5
+do
+	echo "$a. *****"
+done
+#skripti lõpp
+
