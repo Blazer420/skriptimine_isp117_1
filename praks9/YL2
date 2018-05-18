@@ -1,0 +1,14 @@
+#!/bin/bash
+echo "sisestage ridade arv:"
+read rida
+echo "sisestage markide arv"
+read mark
+for (( i = 1; i <= $rida; i++))
+do
+	for (( j = 1; j <= $mark; j++))
+
+	do
+
+		echo -n "$i "
+	echo " "
+done
