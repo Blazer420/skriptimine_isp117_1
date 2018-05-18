@@ -5,10 +5,18 @@
 
 for (( r=1; r<=5; r++ ))
 do
-	echo -n "* "
+	echo -n " "
+	if [ $r -eq 1 ]; then
 	for (( t=1; t<=5; t++ ))
 	do
-		echo -n "  "
+		echo -n "*  "
 	done
-	echo ""
+	else
+	echo -n "'"
+	for ((a = 2; a < 5; a++))
+	do
+	echo -n "  "
+	echo -n "* "
+	fi
+	echo
 done
